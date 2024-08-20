@@ -1,0 +1,67 @@
+/* Estilos generales */
+body {
+  font-family: 'Roboto', sans-serif; /* Cambié la fuente a Roboto para una apariencia más moderna */
+  background-color: #f4f4f9; /* Fondo claro */
+  color: #333;
+  margin: 20px;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: #444;
+  text-align: center;
+}
+
+button {
+  background-color: #6200ea; /* Botones con color púrpura */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #3700b3; /* Cambio de color al pasar el mouse */
+}
+
+ul {
+  list-style-type: none; /* Eliminar el estilo de lista por defecto */
+  padding: 0;
+}
+
+#taskList li, #languajeList li {
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 8px;
+  background-color: #ffffff; /* Fondo blanco para las listas */
+  border: 1px solid #ccc;
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#taskList li:hover, #languajeList li:hover {
+  background-color: #f1f1f1; /* Cambio de color al pasar el mouse */
+  transform: scale(1.02); /* Ligeramente más grande al pasar el mouse */
+}
+
+#taskList li.selected, #languajeList li.selected {
+  background-color: #d1c4e9; /* Color diferente cuando está seleccionado */
+  border-color: #6200ea;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto; /* Centrar el contenido */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra envolvente */
+}
+
+button + button {
+  margin-left: 10px; /* Espacio entre botones */
+}
